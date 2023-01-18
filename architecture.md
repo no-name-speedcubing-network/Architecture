@@ -36,16 +36,13 @@
   - v1 timer may show or not show time along the solving
   - v1 solves must saving in system 
 
-###
-
-#### Also, some features for future release
-
-- v2 The user can simply translate every post and comment by pressing one button 
-- v2 The user may write reconstruction of his solves  
-- v2 App must include virtual cube to add and watch solves
-- v2 The user can give or not give permission for watching his solves/solve to others
-- v2 App must include page with tutorials from beginner to advanced
-- v2 App must have page with different algorithms were people can vote and add them
+- ##### Also, some features for future release
+	- v2 The user can simply translate every post and comment by pressing one button 
+	- v2 The user may write reconstruction of his solves  
+	- v2 App must include virtual cube to add and watch solves
+	- v2 The user can give or not give permission for watching his solves/solve to others
+	- v2 App must include page with tutorials from beginner to advanced
+	- v2 App must have page with different algorithms were people can vote and add them
 
 
 ### consumptions
