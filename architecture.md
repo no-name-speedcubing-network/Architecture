@@ -28,7 +28,7 @@
 
   - v1 After basic registration, the user will receive a confirmation of the continuation of registration. 
 
- The email must have a unique link.
+  - v1 The email must have a unique link.
 
   - v1 The user who goes by a link should be redirected to the profile page
 
@@ -36,7 +36,7 @@
 
   
 
-- ##### progile 
+- ##### profile 
 
   - v2 The user can give or not give permission for watching his solves/solve to others
 
