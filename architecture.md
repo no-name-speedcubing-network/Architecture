@@ -51,9 +51,10 @@
 
   - v1 time starts on space and stops on every key, on phones it's full touch screen
   - v1 The user may add unlimited sessions
-  - v1 must include good approved by community program for scrambles
+  - v1 must include approved by community program for scrambles
   - v1 time on the timer may be shown or not shown along the solving
   - v1 solves must saving in system
+  - v1/v2 session must be cached on users device 
   - v2 timer must include virtual cube
   - v2 The user can click on any solve with scramble (his or not) and watch solve (virtual cube requirement later)
   - v2/v3 Users can have virtual solving battles with another users in real time (mechanics later)
@@ -99,7 +100,7 @@
 #
 
 
-## API definition
+### API definition
 
 ###### rest api
   
@@ -110,7 +111,7 @@
 - Profiles -> `/profiles/?user_id=<user_id>`
 - Posts -> `/posts/?post_id<post_id>`
 - Comments ->  `/posts/comments/?post_id<post_id>&comment_id=<comment_id>`
-- Likes ->  `/posts/?post_id=<post_id>&likes` OR '/posts/?comment_id=<comment_id>&likes'
+- Likes ->  `/posts/?post_id=<post_id>&likes` or `/posts/?comment_id=<comment_id>&likes`
 - Sessions ->  `/timer/sessions/?session_id<session_id>`
 - Solves -> `/time/solves/?user_id=<user_id>`
 
@@ -142,7 +143,7 @@
   }
   ```
 
--   post  
+- post  
   ```json
   {
     "id": 42194,
@@ -172,3 +173,26 @@
     "comment_id": 4853256
   }
   ```
+  
+- Session 
+  ```json
+  {
+    "id": 4393, 
+    "user_id": 9743,
+    "solve_id (many)": 3425325
+  }
+  ```
+  
+
+- Solve
+  ```json
+  {
+    "id": 4342554,
+    "user_id": 43252,
+    "session_id": 85463,
+    "scramble": "R2 F L' R' F2 B2 D2 ....",
+    "time": "00:00:04:45,325",
+    "reconstruction": "R L2 B' R' F B2 D' ...."
+  }
+  ```
+  
