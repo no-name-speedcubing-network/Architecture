@@ -40,9 +40,8 @@
 
  - v2 The user can give or not give permission for watching his solves/solve to others
 
- - v1 In profile page the user can add his full name, bio, avatar, time of solving different Rubik's cubes 
-
- (pb (personal best), avg 5 (average of 5 solves), avg 100, avg 1000), location (country & city).
+ - v1 In profile page the user can add his full name, bio, avatar, location (country & city).
+ - v1 also in profile page the user can add time of solving different Rubik's cubes (pb (personal best), avg 5 (average of 5 solves), avg 100, avg 1000 (Only oficial WCA cubes)
 
 - ##### posts
 
@@ -116,13 +115,16 @@
 
 ### 4. Availability + Partition Tolerance (AP over CP)
 
+
+### 5. Security 
+
   
 
-### 5. Durability 
+### 6. Durability 
 
   
 
-### 6. System Constraints
+### 7. System Constraints
 
  - v1 must be released before 15 march
 
@@ -147,6 +149,7 @@
 ### Entities and URIs
 
 -   Users ->  /users/?user_id<user_id>
+-   Profiles -> /profiles/?user_id=<user_id>
 -   Posts -> /posts/?post_id<post_id>
 -   Comments ->  /posts/coments/?post_id<post_id>&comment_id=<comment_id>
 -   Votes ->  /posts/?post_id<post_id>&voted_user_id=<voted_user_id>
@@ -158,18 +161,34 @@
 
 #### Resources Representation 
 
--   post
-
-	-   {
-	
-			"id": "42194",
-			"title": "how to become middle developer in one yer",
-			"user_id": "3429",
-			"Topics": ['developer', 'code', 'money'],
-		        "Votes": 9, 
-			"Body": "......"
+- user 
+ 
+		{
+			"id": 39523,
+			"posts": 12,
+			"comments_placed": 33,
+			"likes_placed": 89,
+			"profile_id"			
 		}
 
+- profile 
 
+		{
+			"Id": 43428,
+			"user_id": 39523,
+			"bio": ".....",
+			"location": "Ukrain, Kyiv",
+			"results": 
+		}
 
-.
+-   post  
+
+		{
+	
+			"id": 42194,
+			"title": "how to become middle developer in one yer",
+			"user_id": 3429,
+			"topics": ['developer', 'code', 'money'],
+			"likes": 9, 
+			"body": "......"
+		}
