@@ -10,7 +10,7 @@
 - ##### This application must have a web interface. 
 
   - v1 it must be responsive on phones
-  - v1 must have 2 color themes (white and black)
+  - v1 must have 2 color themes (light and )
 
 
 - ##### authentication & authorization
@@ -75,16 +75,18 @@
   
 
 ### 2. Performance
-- include system monitoring that will send message about low performance 
+- v2/v3 include system monitoring that will send message about low performance 
   
 
 ### 3. Fault Tolerance (99.9)
+- v2/v3 include system monitoring that will send message about low performance
 
 
 ### 4. Availability + Partition Tolerance (AP over CP)
 
 
 ### 5. Security 
+- common security practices 
 
 
 ### 6. Durability 
@@ -200,3 +202,22 @@
   }
   ```
   
+
+## Technology stack
+
+### backend
+- Django REST framework
+- Django ORM
+
+### server side
+
+### databases
+
+### cloud providers
+
+### testing
+- pytest
+
+### frontend
+- react
+- react-bootstrap
