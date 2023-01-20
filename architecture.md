@@ -10,7 +10,7 @@
 - ##### This application must have a web interface. 
 
   - v1 it must be responsive on phones
-  - v1 must have 2 color themes (white and black) and user cna switch them on button
+  - v1 must have 2 color themes (white and black)
 
 
 - ##### authentication & authorization
@@ -20,7 +20,7 @@
   - v1 The email must have a unique link.
   - v1 The user who goes by a link should be redirected to the profile page
   - v1 Unauthorized guests cannot view the profile and pictures of users.
- 
+
 
 - ##### profile
 
@@ -65,7 +65,9 @@
 
   - v2 App must include page with tutorials from beginner to advanced
   - v2 App must have page with different algorithms were people can vote and add them
-
+  - v2 Users can send request to connect, another user can accept or reject. 
+  - v2 if one of users delete another from contact, connection disappears
+  
 #
 
 
@@ -73,6 +75,7 @@
   
 
 ### 2. Performance
+- include system monitoring that will send message about low performance 
   
 
 ### 3. Fault Tolerance (99.9)
@@ -83,7 +86,6 @@
 
 ### 5. Security 
 
-  
 
 ### 6. Durability 
 
@@ -125,7 +127,8 @@
     "posts": 12,
     "comments_placed": 33,
     "likes_placed": 89,
-    "profile_id": 43428
+    "profile_id": 43428,
+    "connections": 34
   }
   ```
 
@@ -158,7 +161,7 @@
 - comment 
   ```json
   {
-    "id": 5252, 
+    "id": 52, 
     "post_id": 342445, 
     "user_id": 64345,
     "body": "...."
@@ -168,6 +171,7 @@
 - like
   ```json
   {
+    "id": 64,
     "post_id": 31213,
     "user_id": 5534,
     "comment_id": 4853256
