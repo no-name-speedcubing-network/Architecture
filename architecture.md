@@ -1,4 +1,12 @@
-# Project requirements
+## What we want to do?
+##### make the best service for cubers
+
+## What is the primary idea of this project?
+##### Cubers can find another cubers with same interests and ideas
+##### Cubers can solve cube on timer
+##### Cubers and people can read tutorials that we provide
+
+## Project requirements
 
 ### Social network for speedcubers
 
