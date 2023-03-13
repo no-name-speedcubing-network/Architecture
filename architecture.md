@@ -103,7 +103,7 @@
 
 ### 7. System Constraints
 
- - v1 must be released before 15 march
+ - v1 must be released before 15 march : failed
  - v1 only one developer can work on it
  - v1 before income cant use more than 15$ month
  - mustn't be scalable more to than 200 000 users (at all)
